@@ -20,7 +20,7 @@ select2.select_by_value("2")
 
 table = driver.find_element(By.ID, "ctl00_ContentPlaceHolder2_gvwApplication")
 rows = table.find_elements(By.TAG_NAME, "tr")
-sleep(5)
+sleep(5)            # Dont ask me why I did this instead of WebDriverWait, I'm just glad the code works.
 
 col = ['S.No.', 'DistrictName', 'Registration_No', 'Student_Name', 'Father_Name', 'Lottery_No', 'Allotted_School', 'Class']
 
